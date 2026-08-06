@@ -1,0 +1,48 @@
+name: Quality Assurance
+
+on:
+  push:
+    branches:
+      - "main"
+  pull_request:
+    branches:
+      - "main"
+  workflow_dispatch:
+
+jobs:
+  markdownlint:
+    runs-on: ubuntu-latest
+    name: Markdown Quality
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+
+      - name: Install linting tools
+        run: |
+          npm install -g markdownlint-cli
+
+      - name: Lint Markdown files
+        run: |
+          markdownlint --config .markdownlint.json --dot "**/*.md" || {
+            echo "Markdown linting failed"
+            echo "Run 'markdownlint --config .markdownlint.json --dot --fix **/*.md' to auto-fix issues"
+            exit 1
+          }
+
+  jsonlint:
+    runs-on: ubuntu-latest
+    name: Config Files Quality
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+
+      - name: Donwload validator
+        run: |
+          curl --location --output validator.tar.gz https://github.com/Boeing/config-file-validator/releases/download/v2.3.0/validator-v2.3-linux-amd64.tar.gz
+          tar -xzf validator.tar.gz validator
+
+      - name: Validate config files
+        run: |
+          ./validator .
