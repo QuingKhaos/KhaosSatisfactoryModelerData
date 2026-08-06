@@ -5372,7 +5372,7 @@
       "Tier": "6-1",
       "Parts": [
         {"Part": "Quickwire", "Amount": "-60"},
-        {"Part": "Silicon Wafer", "Amount": "-25"},
+        {"Part": "Silicon Wafer", "Amount": "-12"},
         {"Part": "Circuit Board", "Amount": "-2"},
         {"Part": "High-Speed Connector", "Amount": "2"}
       ]
@@ -5385,7 +5385,7 @@
       "Tier": "5-2",
       "Parts": [
         {"Part": "Copper Sheet", "Amount": "-11"},
-        {"Part": "Silicon Wafer", "Amount": "-11"},
+        {"Part": "Silicon Wafer", "Amount": "-6"},
         {"Part": "Circuit Board", "Amount": "5"}
       ]
     },
