@@ -1428,27 +1428,27 @@
     {
       "Name": "Silicon",
       "Tier": "5-0",
-      "SinkPoints": 0
+      "SinkPoints": 200
     },
     {
       "Name": "Silicon Wafer",
       "Tier": "5-0",
-      "SinkPoints": 0
+      "SinkPoints": 400
     },
     {
       "Name": "Optical Fiber",
       "Tier": "6-0",
-      "SinkPoints": 0
+      "SinkPoints": 40
     },
     {
       "Name": "MEMS Gyroscope",
       "Tier": "7-0",
-      "SinkPoints": 0
+      "SinkPoints": 408
     },
     {
       "Name": "Silicone",
       "Tier": "7-0",
-      "SinkPoints": 0
+      "SinkPoints": 618
     }
   ],
   "Recipes": [
