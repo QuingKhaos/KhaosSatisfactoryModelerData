@@ -1426,6 +1426,46 @@
       "SinkPoints": 0
     },
     {
+      "Name": "Salt",
+      "Tier": "7-0",
+      "SinkPoints": 100
+    },
+    {
+      "Name": "Chlorine",
+      "Tier": "7-0",
+      "SinkPoints": 0
+    },
+    {
+      "Name": "Hydrogen Chloride",
+      "Tier": "7-0",
+      "SinkPoints": 0
+    },
+    {
+      "Name": "Epoxy",
+      "Tier": "7-0",
+      "SinkPoints": 0
+    },
+    {
+      "Name": "Vinyl Chloride",
+      "Tier": "7-0",
+      "SinkPoints": 0
+    },
+    {
+      "Name": "Ferric Chloride",
+      "Tier": "7-0",
+      "SinkPoints": 1212
+    },
+    {
+      "Name": "PCB Substrate",
+      "Tier": "7-0",
+      "SinkPoints": 778
+    },
+    {
+      "Name": "PCB",
+      "Tier": "7-0",
+      "SinkPoints": 2113
+    },
+    {
       "Name": "Silicon",
       "Tier": "5-0",
       "SinkPoints": 200
@@ -5342,6 +5382,180 @@
         {"Part": "FICSMAS Wonder Star", "Amount": "1"}
       ],
       "Ficsmas": true
+    },
+    {
+      "Name": "[Chlorine] Salt",
+      "Machine": "Refinery",
+      "BatchTime": "2",
+      "Tier": "7-0",
+      "Parts": [
+        {"Part": "Water", "Amount": "-10"},
+        {"Part": "Salt", "Amount": "1"}
+      ]
+    },
+    {
+      "Name": "[Chlorine] Chlorine",
+      "Machine": "Refinery",
+      "BatchTime": "1/2",
+      "Tier": "7-0",
+      "Parts": [
+        {"Part": "Salt", "Amount": "-1"},
+        {"Part": "Chlorine", "Amount": "5"}
+      ]
+    },
+    {
+      "Name": "[Chlorine] Hydrogen Chloride",
+      "Machine": "Blender",
+      "BatchTime": "10",
+      "Tier": "7-0",
+      "Parts": [
+        {"Part": "Water", "Amount": "-10"},
+        {"Part": "Chlorine", "Amount": "-10"},
+        {"Part": "Hydrogen Chloride", "Amount": "20"}
+      ]
+    },
+    {
+      "Name": "[Chlorine] Salt Hydrogen Chloride",
+      "Machine": "Blender",
+      "BatchTime": "1",
+      "Alternate": true,
+      "Tier": "7-0",
+      "Parts": [
+        {"Part": "Salt", "Amount": "-1"},
+        {"Part": "Water", "Amount": "-5"},
+        {"Part": "Sulfuric Acid", "Amount": "-5"},
+        {"Part": "Hydrogen Chloride", "Amount": "10"}
+      ]
+    },
+    {
+      "Name": "[Chlorine] Epoxy",
+      "Machine": "Blender",
+      "BatchTime": "3",
+      "Tier": "7-0",
+      "Parts": [
+        {"Part": "Chlorine", "Amount": "-10"},
+        {"Part": "Fuel", "Amount": "-10"},
+        {"Part": "Epoxy", "Amount": "10"},
+        {"Part": "Salt", "Amount": "1"}
+      ]
+    },
+    {
+      "Name": "[Chlorine] Vinyl Chloride",
+      "Machine": "Blender",
+      "BatchTime": "3",
+      "Tier": "7-0",
+      "Parts": [
+        {"Part": "Chlorine", "Amount": "-10"},
+        {"Part": "Fuel", "Amount": "-20"},
+        {"Part": "Vinyl Chloride", "Amount": "20"}
+      ]
+    },
+    {
+      "Name": "[Chlorine] Vinyl Plastic",
+      "Machine": "Refinery",
+      "BatchTime": "6",
+      "Tier": "7-0",
+      "Parts": [
+        {"Part": "Vinyl Chloride", "Amount": "-2"},
+        {"Part": "Plastic", "Amount": "2"}
+      ]
+    },
+    {
+      "Name": "[Chlorine] Ferric Chloride",
+      "Machine": "Refinery",
+      "BatchTime": "3",
+      "Tier": "7-0",
+      "Parts": [
+        {"Part": "Iron Plate", "Amount": "-2"},
+        {"Part": "Chlorine", "Amount": "-30"},
+        {"Part": "Ferric Chloride", "Amount": "2"}
+      ]
+    },
+    {
+      "Name": "[Chlorine] Ferric Chloride (HCl)",
+      "Machine": "Refinery",
+      "BatchTime": "3",
+      "Alternate": true,
+      "Tier": "7-0",
+      "Parts": [
+        {"Part": "Iron Plate", "Amount": "-1"},
+        {"Part": "Hydrogen Chloride", "Amount": "-30"},
+        {"Part": "Ferric Chloride", "Amount": "4"}
+      ]
+    },
+    {
+      "Name": "[Chlorine] PCB Substrate",
+      "Machine": "Refinery",
+      "BatchTime": "6",
+      "Tier": "7-0",
+      "Parts": [
+        {"Part": "Epoxy", "Amount": "-30"},
+        {"Part": "Plastic", "Amount": "-3"},
+        {"Part": "Copper Sheet", "Amount": "-1"},
+        {"Part": "PCB Substrate", "Amount": "12"}
+      ]
+    },
+    {
+      "Name": "[Chlorine] PCB",
+      "Machine": "Refinery",
+      "BatchTime": "8",
+      "Tier": "7-0",
+      "Parts": [
+        {"Part": "PCB Substrate", "Amount": "-4"},
+        {"Part": "Ferric Chloride", "Amount": "-2"},
+        {"Part": "Water", "Amount": "-20"},
+        {"Part": "PCB", "Amount": "4"}
+      ]
+    },
+    {
+      "Name": "[Chlorine] High-Speed Connector",
+      "Machine": "Manufacturer",
+      "BatchTime": "16",
+      "Tier": "6-1",
+      "Parts": [
+        {"Part": "Quickwire", "Amount": "-56"},
+        {"Part": "Cable", "Amount": "-10"},
+        {"Part": "PCB", "Amount": "-1"},
+        {"Part": "High-Speed Connector", "Amount": "1"}
+      ]
+    },
+    {
+      "Name": "[Chlorine] Silicon High-Speed Connector",
+      "Machine": "Manufacturer",
+      "BatchTime": "40",
+      "Alternate": true,
+      "Tier": "6-1",
+      "Parts": [
+        {"Part": "Quickwire", "Amount": "-60"},
+        {"Part": "Silica", "Amount": "-25"},
+        {"Part": "PCB", "Amount": "-2"},
+        {"Part": "High-Speed Connector", "Amount": "2"}
+      ]
+    },
+    {
+      "Name": "[Chlorine+Silicon] High-Speed Connector",
+      "Machine": "Manufacturer",
+      "BatchTime": "16",
+      "Tier": "6-1",
+      "Parts": [
+        {"Part": "Quickwire", "Amount": "-56"},
+        {"Part": "Optical Fiber", "Amount": "-10"},
+        {"Part": "PCB", "Amount": "-1"},
+        {"Part": "High-Speed Connector", "Amount": "1"}
+      ]
+    },
+    {
+      "Name": "[Chlorine+Silicon] Silicon High-Speed Connector",
+      "Machine": "Manufacturer",
+      "BatchTime": "40",
+      "Alternate": true,
+      "Tier": "6-1",
+      "Parts": [
+        {"Part": "Quickwire", "Amount": "-60"},
+        {"Part": "Silicon Wafer", "Amount": "-12"},
+        {"Part": "PCB", "Amount": "-2"},
+        {"Part": "High-Speed Connector", "Amount": "2"}
+      ]
     },
     {
       "Name": "[Silicon] Silicon",
