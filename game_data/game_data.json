@@ -5505,7 +5505,7 @@
     },
     {
       "Name": "[Chlorine] PCB Substrate",
-      "Machine": "Refinery",
+      "Machine": "Blender",
       "BatchTime": "6",
       "Tier": "7-0",
       "Parts": [
@@ -5517,7 +5517,7 @@
     },
     {
       "Name": "[Chlorine] PCB",
-      "Machine": "Refinery",
+      "Machine": "Blender",
       "BatchTime": "8",
       "Tier": "7-0",
       "Parts": [
