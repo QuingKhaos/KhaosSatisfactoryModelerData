@@ -1471,6 +1471,26 @@
       "SinkPoints": 200
     },
     {
+      "Name": "Lead Ore",
+      "Tier": "0-0",
+      "SinkPoints": 1
+    },
+    {
+      "Name": "Lead Ingot",
+      "Tier": "0-0",
+      "SinkPoints": 2
+    },
+    {
+      "Name": "Lead Plate",
+      "Tier": "0-0",
+      "SinkPoints": 5
+    },
+    {
+      "Name": "Lead Expansion Bolt",
+      "Tier": "2-1",
+      "SinkPoints": 7
+    },
+    {
       "Name": "Silicon Wafer",
       "Tier": "5-0",
       "SinkPoints": 400
@@ -5555,6 +5575,127 @@
         {"Part": "Silicon Wafer", "Amount": "-12"},
         {"Part": "PCB", "Amount": "-2"},
         {"Part": "High-Speed Connector", "Amount": "2"}
+      ]
+    },
+    {
+      "Name": "[Lead] Lead Ore",
+      "Machine": "Miner",
+      "BatchTime": "60",
+      "Tier": "0-5",
+      "Parts": [
+        {"Part": "Lead Ore", "Amount": "1"}
+      ]
+    },
+    {
+      "Name": "[Lead] Lead Ingot",
+      "Machine": "Smelter",
+      "BatchTime": "2",
+      "Tier": "0-0",
+      "Parts": [
+        {"Part": "Lead Ore", "Amount": "-1"},
+        {"Part": "Lead Ingot", "Amount": "1"}
+      ]
+    },
+    {
+      "Name": "[Lead] Lead Plate",
+      "Machine": "Constructor",
+      "BatchTime": "6",
+      "Tier": "0-0",
+      "Parts": [
+        {"Part": "Lead Ingot", "Amount": "-3"},
+        {"Part": "Lead Plate", "Amount": "2"}
+      ]
+    },
+    {
+      "Name": "[Lead] Lead Plate",
+      "Machine": "Constructor",
+      "BatchTime": "6",
+      "Tier": "0-0",
+      "Parts": [
+        {"Part": "Lead Ingot", "Amount": "-3"},
+        {"Part": "Lead Plate", "Amount": "2"}
+      ]
+    },
+    {
+      "Name": "[Lead] Rifle Ammo",
+      "Machine": "Assembler",
+      "BatchTime": "12",
+      "Tier": "5-2",
+      "Parts": [
+        {"Part": "Lead Plate", "Amount": "-3"},
+        {"Part": "Smokeless Powder", "Amount": "-2"},
+        {"Part": "Rifle Ammo", "Amount": "15"}
+      ]
+    },
+    {
+      "Name": "[Lead] Catalytic Sulfuric Acid",
+      "Machine": "Blender",
+      "BatchTime": "6",
+      "Alternate": true,
+      "Tier": "7-5",
+      "Parts": [
+        {"Part": "Lead Plate", "Amount": "-2"},
+        {"Part": "Sulfur", "Amount": "-10"},
+        {"Part": "Water", "Amount": "-10"},
+        {"Part": "Sulfuric Acid", "Amount": "10"}
+      ]
+    },
+    {
+      "Name": "[Lead] Encased Uranium Cell",
+      "Machine": "Blender",
+      "BatchTime": "12",
+      "Tier": "8-2",
+      "Parts": [
+        {"Part": "Uranium", "Amount": "-10"},
+        {"Part": "Lead Plate", "Amount": "-3"},
+        {"Part": "Sulfuric Acid", "Amount": "-8"},
+        {"Part": "Encased Uranium Cell", "Amount": "5"},
+        {"Part": "Sulfuric Acid", "Amount": "2"}
+      ]
+    },
+    {
+      "Name": "[Lead] Encased Plutonium Cell",
+      "Machine": "Assembler",
+      "BatchTime": "12",
+      "Tier": "8-5",
+      "Parts": [
+        {"Part": "Plutonium Pellet", "Amount": "-2"},
+        {"Part": "Lead Plate", "Amount": "-4"},
+        {"Part": "Encased Plutonium Cell", "Amount": "1"}
+      ]
+    },
+    {
+      "Name": "[Lead] Lead Expansion Bolt",
+      "Machine": "Assembler",
+      "BatchTime": "1",
+      "Tier": "2-1",
+      "Parts": [
+        {"Part": "Lead Plate", "Amount": "-1"},
+        {"Part": "Iron Rod", "Amount": "-1"},
+        {"Part": "Lead Expansion Bolt", "Amount": "2"}
+      ]
+    },
+    {
+      "Name": "[Lead] Rotor",
+      "Machine": "Assembler",
+      "BatchTime": "15",
+      "Tier": "2-1",
+      "Parts": [
+        {"Part": "Iron Rod", "Amount": "-5"},
+        {"Part": "Lead Expansion Bolt", "Amount": "-15"},
+        {"Part": "Rotor", "Amount": "1"}
+      ]
+    },
+    {
+      "Name": "[Lead] Copper Rotor",
+      "Machine": "Assembler",
+      "BatchTime": "16",
+      "Alternate": true,
+      "Tier": "2-1",
+      "Parts": [
+        {"Part": "Copper Sheet", "Amount": "-6"},
+        {"Part": "Lead Expansion Bolt", "Amount": "-26"},
+        {"Part": "Rotor", "Amount": "3"}
       ]
     },
     {
