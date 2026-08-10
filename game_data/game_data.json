@@ -1509,6 +1509,51 @@
       "Name": "Silicone",
       "Tier": "7-0",
       "SinkPoints": 618
+    },
+    {
+      "Name": "Tin Ore",
+      "Tier": "0-0",
+      "SinkPoints": 3
+    },
+    {
+      "Name": "Tin Ingot",
+      "Tier": "0-0",
+      "SinkPoints": 6
+    },
+    {
+      "Name": "Tin Plate",
+      "Tier": "0-0",
+      "SinkPoints": 12
+    },
+    {
+      "Name": "Tinned Wire",
+      "Tier": "2-0",
+      "SinkPoints": 15
+    },
+    {
+      "Name": "Solder Ingot",
+      "Tier": "3-0",
+      "SinkPoints": 30
+    },
+    {
+      "Name": "Solder",
+      "Tier": "3-0",
+      "SinkPoints": 30
+    },
+    {
+      "Name": "Bronze Ingot",
+      "Tier": "3-0",
+      "SinkPoints": 12
+    },
+    {
+      "Name": "Bronze Plate",
+      "Tier": "3-0",
+      "SinkPoints": 24
+    },
+    {
+      "Name": "Organotins",
+      "Tier": "5-2",
+      "SinkPoints": 0
     }
   ],
   "Recipes": [
@@ -5578,6 +5623,60 @@
       ]
     },
     {
+      "Name": "[Chlorine+Silicon+Tin] High-Speed Connector",
+      "Machine": "Manufacturer",
+      "BatchTime": "16",
+      "Tier": "6-1",
+      "Parts": [
+        {"Part": "Solder", "Amount": "-20"},
+        {"Part": "Quickwire", "Amount": "-36"},
+        {"Part": "Optical Fiber", "Amount": "-10"},
+        {"Part": "PCB", "Amount": "-1"},
+        {"Part": "High-Speed Connector", "Amount": "1"}
+      ]
+    },
+    {
+      "Name": "[Chlorine+Silicon+Tin] Silicon High-Speed Connector",
+      "Machine": "Manufacturer",
+      "BatchTime": "40",
+      "Alternate": true,
+      "Tier": "6-1",
+      "Parts": [
+        {"Part": "Solder", "Amount": "-20"},
+        {"Part": "Quickwire", "Amount": "-40"},
+        {"Part": "Silicon Wafer", "Amount": "-12"},
+        {"Part": "PCB", "Amount": "-2"},
+        {"Part": "High-Speed Connector", "Amount": "2"}
+      ]
+    },
+    {
+      "Name": "[Chlorine+Tin] High-Speed Connector",
+      "Machine": "Manufacturer",
+      "BatchTime": "16",
+      "Tier": "6-1",
+      "Parts": [
+        {"Part": "Solder", "Amount": "-20"},
+        {"Part": "Quickwire", "Amount": "-36"},
+        {"Part": "Cable", "Amount": "-10"},
+        {"Part": "PCB", "Amount": "-1"},
+        {"Part": "High-Speed Connector", "Amount": "1"}
+      ]
+    },
+    {
+      "Name": "[Chlorine+Tin] Silicon High-Speed Connector",
+      "Machine": "Manufacturer",
+      "BatchTime": "40",
+      "Alternate": true,
+      "Tier": "6-1",
+      "Parts": [
+        {"Part": "Solder", "Amount": "-20"},
+        {"Part": "Quickwire", "Amount": "-40"},
+        {"Part": "Silica", "Amount": "-25"},
+        {"Part": "PCB", "Amount": "-2"},
+        {"Part": "High-Speed Connector", "Amount": "2"}
+      ]
+    },
+    {
       "Name": "[Lead] Lead Ore",
       "Machine": "Miner",
       "BatchTime": "60",
@@ -5594,16 +5693,6 @@
       "Parts": [
         {"Part": "Lead Ore", "Amount": "-1"},
         {"Part": "Lead Ingot", "Amount": "1"}
-      ]
-    },
-    {
-      "Name": "[Lead] Lead Plate",
-      "Machine": "Constructor",
-      "BatchTime": "6",
-      "Tier": "0-0",
-      "Parts": [
-        {"Part": "Lead Ingot", "Amount": "-3"},
-        {"Part": "Lead Plate", "Amount": "2"}
       ]
     },
     {
@@ -5733,6 +5822,20 @@
       ]
     },
     {
+      "Name": "[Silicon+Tin] Silicon High-Speed Connector",
+      "Machine": "Manufacturer",
+      "BatchTime": "40",
+      "Alternate": true,
+      "Tier": "6-1",
+      "Parts": [
+        {"Part": "Solder", "Amount": "-20"},
+        {"Part": "Quickwire", "Amount": "-40"},
+        {"Part": "Silicon Wafer", "Amount": "-12"},
+        {"Part": "Circuit Board", "Amount": "-2"},
+        {"Part": "High-Speed Connector", "Amount": "2"}
+      ]
+    },
+    {
       "Name": "[Silicon] Silicon Circuit Board",
       "Machine": "Assembler",
       "BatchTime": "24",
@@ -5805,6 +5908,19 @@
       ]
     },
     {
+      "Name": "[Silicon+Tin] High-Speed Connector",
+      "Machine": "Manufacturer",
+      "BatchTime": "16",
+      "Tier": "6-1",
+      "Parts": [
+        {"Part": "Solder", "Amount": "-20"},
+        {"Part": "Quickwire", "Amount": "-36"},
+        {"Part": "Optical Fiber", "Amount": "-10"},
+        {"Part": "Circuit Board", "Amount": "-1"},
+        {"Part": "High-Speed Connector", "Amount": "1"}
+      ]
+    },
+    {
       "Name": "[Silicon] MEMS Gyroscope",
       "Machine": "Manufacturer",
       "BatchTime": "12",
@@ -5853,6 +5969,234 @@
         {"Part": "High-Speed Connector", "Amount": "-3"},
         {"Part": "Silicone", "Amount": "-28"},
         {"Part": "Supercomputer", "Amount": "1"}
+      ]
+    },
+    {
+      "Name": "[Tin] Tin Ore",
+      "Machine": "Miner",
+      "BatchTime": "60",
+      "Tier": "0-5",
+      "Parts": [
+        {"Part": "Tin Ore", "Amount": "1"}
+      ]
+    },
+    {
+      "Name": "[Tin] Tin Ingot",
+      "Machine": "Smelter",
+      "BatchTime": "2",
+      "Tier": "0-0",
+      "Parts": [
+        {"Part": "Tin Ore", "Amount": "-1"},
+        {"Part": "Tin Ingot", "Amount": "1"}
+      ]
+    },
+    {
+      "Name": "[Tin] Tin Plate",
+      "Machine": "Constructor",
+      "BatchTime": "6",
+      "Tier": "0-0",
+      "Parts": [
+        {"Part": "Tin Ingot", "Amount": "-3"},
+        {"Part": "Tin Plate", "Amount": "3"}
+      ]
+    },
+    {
+      "Name": "[Tin] Tinned Wire",
+      "Machine": "Constructor",
+      "BatchTime": "3/2",
+      "Tier": "2-0",
+      "Parts": [
+        {"Part": "Tin Plate", "Amount": "-1"},
+        {"Part": "Wire", "Amount": "-8"},
+        {"Part": "Tinned Wire", "Amount": "8"}
+      ]
+    },
+    {
+      "Name": "[Tin] Solder Ingot",
+      "Machine": "Foundry",
+      "BatchTime": "1",
+      "Tier": "3-0",
+      "Parts": [
+        {"Part": "Tin Ingot", "Amount": "-4"},
+        {"Part": "Copper Ingot", "Amount": "-1"},
+        {"Part": "Solder Ingot", "Amount": "2"}
+      ]
+    },
+    {
+      "Name": "[Tin+Lead] Solder Ingot",
+      "Machine": "Foundry",
+      "BatchTime": "1",
+      "Tier": "3-0",
+      "Parts": [
+        {"Part": "Tin Ingot", "Amount": "-3"},
+        {"Part": "Lead Ingot", "Amount": "-2"},
+        {"Part": "Solder Ingot", "Amount": "2"}
+      ]
+    },
+    {
+      "Name": "[Tin] Solder",
+      "Machine": "Constructor",
+      "BatchTime": "4",
+      "Tier": "3-0",
+      "Parts": [
+        {"Part": "Solder Ingot", "Amount": "-1"},
+        {"Part": "Solder", "Amount": "2"}
+      ]
+    },
+    {
+      "Name": "[Tin] Solder Circuit Board",
+      "Machine": "Assembler",
+      "BatchTime": "30",
+      "Tier": "5-2",
+      "Parts": [
+        {"Part": "Plastic", "Amount": "-10"},
+        {"Part": "Solder", "Amount": "-20"},
+        {"Part": "Circuit Board", "Amount": "10"}
+      ]
+    },
+    {
+      "Name": "[Tin] High-Speed Connector",
+      "Machine": "Manufacturer",
+      "BatchTime": "16",
+      "Tier": "6-1",
+      "Parts": [
+        {"Part": "Solder", "Amount": "-20"},
+        {"Part": "Quickwire", "Amount": "-36"},
+        {"Part": "Cable", "Amount": "-10"},
+        {"Part": "Circuit Board", "Amount": "-1"},
+        {"Part": "High-Speed Connector", "Amount": "1"}
+      ]
+    },
+    {
+      "Name": "[Tin] Silicon High-Speed Connector",
+      "Machine": "Manufacturer",
+      "BatchTime": "40",
+      "Alternate": true,
+      "Tier": "6-1",
+      "Parts": [
+        {"Part": "Solder", "Amount": "-20"},
+        {"Part": "Quickwire", "Amount": "-40"},
+        {"Part": "Silica", "Amount": "-25"},
+        {"Part": "Circuit Board", "Amount": "-2"},
+        {"Part": "High-Speed Connector", "Amount": "2"}
+      ]
+    },
+    {
+      "Name": "[Tin] Bronze Ingot",
+      "Machine": "Foundry",
+      "BatchTime": "60",
+      "Tier": "3-0",
+      "Parts": [
+        {"Part": "Copper Ingot", "Amount": "-17"},
+        {"Part": "Tin Ingot", "Amount": "-3"},
+        {"Part": "Bronze Ingot", "Amount": "20"}
+      ]
+    },
+    {
+      "Name": "[Tin] Bronze Plate",
+      "Machine": "Constructor",
+      "BatchTime": "6",
+      "Tier": "3-0",
+      "Parts": [
+        {"Part": "Bronze Ingot", "Amount": "-3"},
+        {"Part": "Bronze Plate", "Amount": "3"}
+      ]
+    },
+    {
+      "Name": "[Tin] Rigor Motor",
+      "Machine": "Manufacturer",
+      "BatchTime": "48",
+      "Alternate": true,
+      "Tier": "6-1",
+      "Parts": [
+        {"Part": "Rotor", "Amount": "-3"},
+        {"Part": "Stator", "Amount": "-3"},
+        {"Part": "Crystal Oscillator", "Amount": "-1"},
+        {"Part": "Bronze Plate", "Amount": "-1"},
+        {"Part": "Motor", "Amount": "6"}
+      ]
+    },
+    {
+      "Name": "[Tin] Organotins",
+      "Machine": "Refinery",
+      "BatchTime": "5",
+      "Tier": "5-2",
+      "Parts": [
+        {"Part": "Tin Plate", "Amount": "-3"},
+        {"Part": "Fuel", "Amount": "-20"},
+        {"Part": "Organotins", "Amount": "50"}
+      ]
+    },
+    {
+      "Name": "[Tin] Residual Rubber",
+      "Machine": "Refinery",
+      "BatchTime": "6",
+      "Tier": "5-2",
+      "Parts": [
+        {"Part": "Polymer Resin", "Amount": "-4"},
+        {"Part": "Organotins", "Amount": "-4"},
+        {"Part": "Rubber", "Amount": "2"}
+      ]
+    },
+    {
+      "Name": "[Tin] Recycled Rubber",
+      "Machine": "Blender",
+      "BatchTime": "12",
+      "Alternate": true,
+      "Tier": "5-2",
+      "Parts": [
+        {"Part": "Plastic", "Amount": "-6"},
+        {"Part": "Fuel", "Amount": "-4"},
+        {"Part": "Organotins", "Amount": "-2"},
+        {"Part": "Rubber", "Amount": "12"}
+      ]
+    },
+    {
+      "Name": "[Tin] Residual Plastic",
+      "Machine": "Refinery",
+      "BatchTime": "6",
+      "Tier": "5-2",
+      "Parts": [
+        {"Part": "Polymer Resin", "Amount": "-6"},
+        {"Part": "Organotins", "Amount": "-2"},
+        {"Part": "Plastic", "Amount": "2"}
+      ]
+    },
+    {
+      "Name": "[Tin] Recycled Plastic",
+      "Machine": "Blender",
+      "BatchTime": "12",
+      "Alternate": true,
+      "Tier": "5-2",
+      "Parts": [
+        {"Part": "Rubber", "Amount": "-6"},
+        {"Part": "Fuel", "Amount": "-4"},
+        {"Part": "Organotins", "Amount": "-2"},
+        {"Part": "Plastic", "Amount": "12"}
+      ]
+    },
+    {
+      "Name": "[Tin] Gas Nobelisk from Organotins",
+      "Machine": "Refinery",
+      "BatchTime": "60",
+      "Tier": "5-2",
+      "Alternate": true,
+      "Parts": [
+        {"Part": "Nobelisk", "Amount": "-4"},
+        {"Part": "Organotins", "Amount": "-10"},
+        {"Part": "Gas Nobelisk", "Amount": "4"}
+      ]
+    },
+    {
+      "Name": "[Tin] Pulse Nobelisk from Organotins",
+      "Machine": "Refinery",
+      "BatchTime": "60",
+      "Tier": "5-2",
+      "Alternate": true,
+      "Parts": [
+        {"Part": "Nobelisk", "Amount": "-10"},
+        {"Part": "Organotins", "Amount": "-5"},
+        {"Part": "Pulse Nobelisk", "Amount": "10"}
       ]
     }
   ]
