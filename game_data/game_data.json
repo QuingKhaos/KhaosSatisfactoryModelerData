@@ -56,6 +56,18 @@
       ]
     },
     {
+      "Name": "Fluid Miner Mk.1",
+      "Tier": "0-5",
+      "AveragePower": "-15",
+      "OverclockPowerExponent": "1321929/1000000",
+      "Cost": [
+        {"Part": "Portable Miner", "Amount": "1"},
+        {"Part": "Copper Sheet", "Amount": "10"},
+        {"Part": "Iron Plate", "Amount": "10"},
+        {"Part": "Concrete", "Amount": "10"}
+      ]
+    },
+    {
       "Name": "Space Elevator",
       "Tier": "0-6",
       "Cost": [
@@ -159,6 +171,19 @@
       "OverclockPowerExponent": "1321929/1000000",
       "Cost": [
         {"Part": "Portable Miner", "Amount": "2"},
+        {"Part": "Encased Industrial Beam", "Amount": "10"},
+        {"Part": "Steel Pipe", "Amount": "20"},
+        {"Part": "Modular Frame", "Amount": "10"}
+      ]
+    },
+    {
+      "Name": "Fluid Miner Mk.2",
+      "Tier": "4-3",
+      "AveragePower": "-45",
+      "OverclockPowerExponent": "1321929/1000000",
+      "Cost": [
+        {"Part": "Portable Miner", "Amount": "2"},
+        {"Part": "Copper Sheet", "Amount": "20"},
         {"Part": "Encased Industrial Beam", "Amount": "10"},
         {"Part": "Steel Pipe", "Amount": "20"},
         {"Part": "Modular Frame", "Amount": "10"}
@@ -314,6 +339,20 @@
       ]
     },
     {
+      "Name": "Fluid Miner Mk.3",
+      "Tier": "8-4",
+      "AveragePower": "-135",
+      "OverclockPowerExponent": "1321929/1000000",
+      "Cost": [
+        {"Part": "Portable Miner", "Amount": "3"},
+        {"Part": "Copper Sheet", "Amount": "60"},
+        {"Part": "Steel Pipe", "Amount": "50"},
+        {"Part": "Supercomputer", "Amount": "5"},
+        {"Part": "Fused Modular Frame", "Amount": "10"},
+        {"Part": "Turbo Motor", "Amount": "3"}
+      ]
+    },
+    {
       "Name": "Particle Accelerator",
       "Tier": "8-5",
       "OverclockPowerExponent": "1321929/1000000",
@@ -402,6 +441,42 @@
         {
           "Name": "Miner Mk.3",
           "PartsRatio": "240"
+        }
+      ],
+      "Capacities": [
+        {
+          "Name": "Impure",
+          "PartsRatio": "1/2",
+          "Color": 13775920
+        },
+        {
+          "Name": "Normal",
+          "Default": true
+        },
+        {
+          "Name": "Pure",
+          "PartsRatio": "2",
+          "Color": 8433977
+        }
+      ]
+    },
+    {
+      "Name": "Fluid Miner",
+      "ShowPpm": true,
+      "AutoRound": false,
+      "DefaultMax": "60",
+      "Machines": [
+        {
+          "Name": "Fluid Miner Mk.1",
+          "Default": true
+        },
+        {
+          "Name": "Fluid Miner Mk.2",
+          "PartsRatio": "2"
+        },
+        {
+          "Name": "Fluid Miner Mk.3",
+          "PartsRatio": "4"
         }
       ],
       "Capacities": [
@@ -1553,6 +1628,26 @@
     {
       "Name": "Organotins",
       "Tier": "5-2",
+      "SinkPoints": 0
+    },
+    {
+      "Name": "Titanium Ore",
+      "Tier": "5-0",
+      "SinkPoints": 10
+    },
+    {
+      "Name": "Titanium Ingot",
+      "Tier": "5-0",
+      "SinkPoints": 20
+    },
+    {
+      "Name": "Titanium Plate",
+      "Tier": "5-0",
+      "SinkPoints": 80
+    },
+    {
+      "Name": "Lubricant",
+      "Tier": "5-0",
       "SinkPoints": 0
     }
   ],
@@ -6197,6 +6292,94 @@
         {"Part": "Nobelisk", "Amount": "-10"},
         {"Part": "Organotins", "Amount": "-5"},
         {"Part": "Pulse Nobelisk", "Amount": "10"}
+      ]
+    },
+    {
+      "Name": "[Titanium] Titanium Ore",
+      "Machine": "Fluid Miner",
+      "BatchTime": "6",
+      "Tier": "5-0",
+      "Parts": [
+        {"Part": "Lubricant", "Amount": "-1"},
+        {"Part": "Titanium Ore", "Amount": "3"}
+      ]
+    },
+    {
+      "Name": "[Titanium] Titanium Ingot",
+      "Machine": "Smelter",
+      "BatchTime": "2",
+      "Tier": "5-0",
+      "Parts": [
+        {"Part": "Titanium Ore", "Amount": "-1"},
+        {"Part": "Titanium Ingot", "Amount": "1"}
+      ]
+    },
+    {
+      "Name": "[Titanium] Titanium Plate",
+      "Machine": "Constructor",
+      "BatchTime": "16",
+      "Tier": "5-0",
+      "Parts": [
+        {"Part": "Titanium Ingot", "Amount": "-10"},
+        {"Part": "Titanium Plate", "Amount": "5"}
+      ]
+    },
+    {
+      "Name": "[Titanium] Lubricant",
+      "Machine": "Refinery",
+      "BatchTime": "2",
+      "Tier": "5-0",
+      "Parts": [
+        {"Part": "Heavy Oil Residue", "Amount": "-1"},
+        {"Part": "Lubricant", "Amount": "4"}
+      ]
+    },
+    {
+      "Name": "[Titanium] Assembly Director System",
+      "Machine": "Assembler",
+      "BatchTime": "80",
+      "Tier": "7-5",
+      "Parts": [
+        {"Part": "Titanium Plate", "Amount": "-5"},
+        {"Part": "Adaptive Control Unit", "Amount": "-2"},
+        {"Part": "Supercomputer", "Amount": "-1"},
+        {"Part": "Assembly Director System", "Amount": "1"}
+      ]
+    },
+    {
+      "Name": "[Titanium] Lightweight Reinforced Plate",
+      "Machine": "Assembler",
+      "BatchTime": "12",
+      "Tier": "5-0",
+      "Parts": [
+        {"Part": "Titanium Plate", "Amount": "-2"},
+        {"Part": "Screw", "Amount": "-10"},
+        {"Part": "Lightweight Reinforced Plate", "Amount": "4"}
+      ]
+    },
+    {
+      "Name": "[Titanium] Lightweight Encased Industrial Beam",
+      "Machine": "Assembler",
+      "BatchTime": "12",
+      "Tier": "5-0",
+      "Parts": [
+        {"Part": "Titanium Plate", "Amount": "-2"},
+        {"Part": "Concrete", "Amount": "-4"},
+        {"Part": "Encased Industrial Beam", "Amount": "1"}
+      ]
+    },
+    {
+      "Name": "[Titanium] Heavy Flexible Frame",
+      "Machine": "Manufacturer",
+      "BatchTime": "16",
+      "Alternate": true,
+      "Tier": "6-1",
+      "Parts": [
+        {"Part": "Modular Frame", "Amount": "-5"},
+        {"Part": "Encased Industrial Beam", "Amount": "-3"},
+        {"Part": "Rubber", "Amount": "-20"},
+        {"Part": "Titanium Plate", "Amount": "-15"},
+        {"Part": "Heavy Modular Frame", "Amount": "1"}
       ]
     }
   ]
