@@ -5783,11 +5783,12 @@
     {
       "Name": "[Lead] Lead Ingot",
       "Machine": "Smelter",
-      "BatchTime": "2",
+      "BatchTime": "20",
       "Tier": "0-0",
       "Parts": [
-        {"Part": "Lead Ore", "Amount": "-1"},
-        {"Part": "Lead Ingot", "Amount": "1"}
+        {"Part": "Lead Ore", "Amount": "-10"},
+        {"Part": "Lead Ingot", "Amount": "8"},
+        {"Part": "Copper Ore", "Amount": "3"}
       ]
     },
     {
@@ -6354,7 +6355,7 @@
       "Parts": [
         {"Part": "Titanium Plate", "Amount": "-2"},
         {"Part": "Screw", "Amount": "-10"},
-        {"Part": "Lightweight Reinforced Plate", "Amount": "4"}
+        {"Part": "Reinforced Iron Plate", "Amount": "4"}
       ]
     },
     {
