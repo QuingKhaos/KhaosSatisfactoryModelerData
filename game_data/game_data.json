@@ -1649,6 +1649,36 @@
       "Name": "Lubricant",
       "Tier": "5-0",
       "SinkPoints": 0
+    },
+    {
+      "Name": "Zircon",
+      "Tier": "3-0",
+      "SinkPoints": 8
+    },
+    {
+      "Name": "Zirconia",
+      "Tier": "3-0",
+      "SinkPoints": 8
+    },
+    {
+      "Name": "Zirconium Sponge",
+      "Tier": "8-0",
+      "SinkPoints": 176
+    },
+    {
+      "Name": "Zirconium Plate",
+      "Tier": "8-0",
+      "SinkPoints": 264
+    },
+    {
+      "Name": "Zircaloy 4",
+      "Tier": "8-0",
+      "SinkPoints": 188
+    },
+    {
+      "Name": "Cermet ",
+      "Tier": "6-0",
+      "SinkPoints": 56
     }
   ],
   "Recipes": [
@@ -6381,6 +6411,218 @@
         {"Part": "Rubber", "Amount": "-20"},
         {"Part": "Titanium Plate", "Amount": "-15"},
         {"Part": "Heavy Modular Frame", "Amount": "1"}
+      ]
+    },
+    {
+      "Name": "[Zirconium] Zircon",
+      "Machine": "Miner",
+      "BatchTime": "90",
+      "Tier": "3-0",
+      "Parts": [
+        {"Part": "Zircon", "Amount": "1"}
+      ]
+    },
+    {
+      "Name": "[Zirconium] Zirconia",
+      "Machine": "Smelter",
+      "BatchTime": "2",
+      "Tier": "3-0",
+      "Parts": [
+        {"Part": "Zircon", "Amount": "-1"},
+        {"Part": "Zirconia", "Amount": "2"}
+      ]
+    },
+    {
+      "Name": "[Zirconium+Titanium] Zirconia",
+      "Machine": "Smelter",
+      "BatchTime": "20",
+      "Tier": "3-0",
+      "Parts": [
+        {"Part": "Zircon", "Amount": "-10"},
+        {"Part": "Zirconia", "Amount": "19"},
+        {"Part": "Titanium Ore", "Amount": "1"}
+      ]
+    },
+    {
+      "Name": "[Zirconium] Cooling System",
+      "Machine": "Blender",
+      "BatchTime": "10",
+      "Tier": "8-3",
+      "Parts": [
+        {"Part": "Heat Sink", "Amount": "-2"},
+        {"Part": "Zirconia", "Amount": "-2"},
+        {"Part": "Water", "Amount": "-5"},
+        {"Part": "Nitrogen Gas", "Amount": "-25"},
+        {"Part": "Cooling System", "Amount": "1"}
+      ]
+    },
+    {
+      "Name": "[Zirconium] Zirconium Sponge",
+      "Machine": "Refinery",
+      "BatchTime": "16/10",
+      "Tier": "8-0",
+      "Parts": [
+        {"Part": "Zirconia", "Amount": "-1"},
+        {"Part": "Sulfuric Acid", "Amount": "-5"},
+        {"Part": "Zirconium Sponge", "Amount": "1"}
+      ]
+    },
+    {
+      "Name": "[Zirconium] Zirconium Powder",
+      "Machine": "Assembler",
+      "BatchTime": "6",
+      "Alternate": true,
+      "Tier": "8-0",
+      "Parts": [
+        {"Part": "Black Powder", "Amount": "-6"},
+        {"Part": "Zirconium Sponge", "Amount": "-1"},
+        {"Part": "Smokeless Powder", "Amount": "6"}
+      ]
+    },
+    {
+      "Name": "[Zirconium] Zirconium Plate",
+      "Machine": "Smelter",
+      "BatchTime": "6",
+      "Tier": "8-0",
+      "Parts": [
+        {"Part": "Zirconium Sponge", "Amount": "-3"},
+        {"Part": "Zirconium Plate", "Amount": "3"}
+      ]
+    },
+    {
+      "Name": "[Zirconium] Explosive Rebar",
+      "Machine": "Manufacturer",
+      "BatchTime": "12",
+      "Tier": "6-1",
+      "Parts": [
+        {"Part": "Iron Rebar", "Amount": "-2"},
+        {"Part": "Smokeless Powder", "Amount": "-2"},
+        {"Part": "Zirconium Plate", "Amount": "-2"},
+        {"Part": "Explosive Rebar", "Amount": "1"}
+      ]
+    },
+    {
+      "Name": "[Zirconium] Heat-Fused Frame",
+      "Machine": "Blender",
+      "BatchTime": "20",
+      "Alternate": true,
+      "Tier": "8-5",
+      "Parts": [
+        {"Part": "Heavy Modular Frame", "Amount": "-1"},
+        {"Part": "Zirconium Plate", "Amount": "-50"},
+        {"Part": "Nitric Acid", "Amount": "-8"},
+        {"Part": "Fuel", "Amount": "-10"},
+        {"Part": "Fused Modular Frame", "Amount": "1"}
+      ]
+    },
+    {
+      "Name": "[Zirconium] Encased Uranium Cell",
+      "Machine": "Blender",
+      "BatchTime": "12",
+      "Tier": "8-2",
+      "Parts": [
+        {"Part": "Uranium", "Amount": "-10"},
+        {"Part": "Zirconium Plate", "Amount": "-3"},
+        {"Part": "Sulfuric Acid", "Amount": "-8"},
+        {"Part": "Encased Uranium Cell", "Amount": "5"},
+        {"Part": "Sulfuric Acid", "Amount": "2"}
+      ]
+    },
+    {
+      "Name": "[Zirconium] Encased Plutonium Cell",
+      "Machine": "Assembler",
+      "BatchTime": "12",
+      "Tier": "8-5",
+      "Parts": [
+        {"Part": "Plutonium Pellet", "Amount": "-2"},
+        {"Part": "Zirconium Plate", "Amount": "-4"},
+        {"Part": "Encased Plutonium Cell", "Amount": "1"}
+      ]
+    },
+    {
+      "Name": "[Zirconium+Tin] Zircaloy 4",
+      "Machine": "Manufacturer",
+      "BatchTime": "60",
+      "Tier": "8-0",
+      "Parts": [
+        {"Part": "Zirconium Sponge", "Amount": "-17"},
+        {"Part": "Tin Plate", "Amount": "-2"},
+        {"Part": "Iron Plate", "Amount": "-1"},
+        {"Part": "Zircaloy 4", "Amount": "20"}
+      ]
+    },
+    {
+      "Name": "[Zirconium+Tin] Encased Uranium Cell",
+      "Machine": "Blender",
+      "BatchTime": "12",
+      "Tier": "8-2",
+      "Parts": [
+        {"Part": "Uranium", "Amount": "-10"},
+        {"Part": "Zircaloy 4", "Amount": "-3"},
+        {"Part": "Sulfuric Acid", "Amount": "-8"},
+        {"Part": "Encased Uranium Cell", "Amount": "5"},
+        {"Part": "Sulfuric Acid", "Amount": "2"}
+      ]
+    },
+    {
+      "Name": "[Zirconium+Tin] Encased Plutonium Cell",
+      "Machine": "Assembler",
+      "BatchTime": "12",
+      "Tier": "8-5",
+      "Parts": [
+        {"Part": "Plutonium Pellet", "Amount": "-2"},
+        {"Part": "Zircaloy 4", "Amount": "-4"},
+        {"Part": "Encased Plutonium Cell", "Amount": "1"}
+      ]
+    },
+    {
+      "Name": "[Zirconium] Cermet",
+      "Machine": "Manufacturer",
+      "BatchTime": "4",
+      "Tier": "6-0",
+      "Parts": [
+        {"Part": "Zirconia", "Amount": "-2"},
+        {"Part": "Copper Sheet", "Amount": "-1"},
+        {"Part": "Silica", "Amount": "-1"},
+        {"Part": "Cermet", "Amount": "4"}
+      ]
+    },
+    {
+      "Name": "[Zirconium+Titanium] Cermet",
+      "Machine": "Manufacturer",
+      "BatchTime": "5",
+      "Tier": "6-0",
+      "Parts": [
+        {"Part": "Zirconia", "Amount": "-2"},
+        {"Part": "Copper Sheet", "Amount": "-1"},
+        {"Part": "Silica", "Amount": "-1"},
+        {"Part": "Titanium Plate", "Amount": "-1"},
+        {"Part": "Cermet", "Amount": "5"}
+      ]
+    },
+    {
+      "Name": "[Zirconium] Modular Engine",
+      "Machine": "Manufacturer",
+      "BatchTime": "60",
+      "Tier": "6-1",
+      "Parts": [
+        {"Part": "Motor", "Amount": "-2"},
+        {"Part": "Rubber", "Amount": "-15"},
+        {"Part": "Smart Plating", "Amount": "-2"},
+        {"Part": "Cermet", "Amount": "-5"},
+        {"Part": "Modular Engine", "Amount": "1"}
+      ]
+    },
+    {
+      "Name": "[Zirconium] Magnetic Field Generator",
+      "Machine": "Manufacturer",
+      "BatchTime": "120",
+      "Tier": "8-2",
+      "Parts": [
+        {"Part": "Versatile Framework", "Amount": "-5"},
+        {"Part": "Electromagnetic Control Rod", "Amount": "-2"},
+        {"Part": "Cermet", "Amount": "-20"},
+        {"Part": "Magnetic Field Generator", "Amount": "2"}
       ]
     }
   ]
